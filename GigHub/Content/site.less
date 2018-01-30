@@ -53,6 +53,12 @@ margin-top: 80px;
 }
 
 /* Bootstrap Overrides */
+
+.popover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
 .navbar-inverse {
 background-color: #ff4342;
 border-color: #ff4342;
@@ -62,8 +68,19 @@ border-color: #ff4342;
 color: #fff;
 }
 
-.navbar-inverse .navbar-brand {
+.navbar-inverse  .navbar-brand {
 color: #fff;
+}
+
+.notifications {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: 8px;
+    right: -1px;
+    background: #a80a0a;
 }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
@@ -76,7 +93,7 @@ color: #fff;
     box-shadow: none;
 }
 
-.navbar-inverse> .navbar-nav > .dropdown > a >.caret {
+ .dropdown > a .caret {
 border-top-color: #fff;
 border-bottom-color: #fff;
 }
@@ -179,4 +196,26 @@ margin-bottom: 30px;
 
 .gigs>li:hover .actions {
     display: block;
+}
+
+.popover-notifications > .popover-content {
+    padding: 0px;
+}
+
+.popover-notifications .notifications {
+    list-style: none;
+    padding-left: 0;
+}
+
+.notifications > li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.notifications > li:last-child {
+    border-bottom: none;
+}
+
+.popover-notifications ul.notifications .highlight {
+    font-weight: bold;
 }
